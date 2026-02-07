@@ -17,7 +17,7 @@ jobs:
   cla:
     runs-on: ubuntu-latest
     steps:
-      - uses: bniladridas/cla-bot@v1
+      - uses: bniladridas/cla-bot@v1.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
