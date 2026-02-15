@@ -11,3 +11,7 @@ runs:
 inputs:
   github-token:
     required: true
+  cla-url:
+    required: false
+    default: ""
+    description: "URL to the CLA document"

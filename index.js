@@ -5,6 +5,7 @@ const fs = require("fs");
 async function run() {
   try {
     const token = core.getInput("github-token");
+    const claUrl = core.getInput("cla-url") || "https://harpertoken.github.io/cla.html";
     const octokit = github.getOctokit(token);
     const { owner, repo } = github.context.repo;
     const pr = github.context.payload.pull_request;
@@ -32,7 +33,7 @@ async function run() {
 
 Hi @${author}, please sign the Contributor License Agreement to proceed.
 
-👉 https://example.com/cla
+👉 ${claUrl}
 
 Once signed, this check will pass automatically.`
     });
