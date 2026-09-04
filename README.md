@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/basebin/clabot/main/.github/assets/thumbnail.png" alt="clabot" width="100%">
+</p>
+
 # CLA Bot
 
 Minimal GitHub Action to verify contributors have signed the Contributor License Agreement.
