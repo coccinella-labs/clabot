@@ -29,11 +29,9 @@ async function run() {
       owner,
       repo,
       issue_number: pr.number,
-      body: `❌ **CLA required**
+      body: `CLA required
 
-Hi @${author}, please sign the Contributor License Agreement to proceed.
-
-👉 ${claUrl}
+Hi @${author}, please [sign the Contributor License Agreement](${claUrl}) before merging.
 
 Once signed, this check will pass automatically.`
     });
