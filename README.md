@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Coccinella-Labs/clabot/main/.github/assets/thumbnail.png" alt="clabot" width="100%">
+  <img src="https://raw.githubusercontent.com/coccinella-labs/clabot/main/.github/assets/thumbnail.png" alt="clabot" width="100%">
 </p>
 
 # CLA Bot
@@ -21,7 +21,7 @@ jobs:
   cla:
     runs-on: ubuntu-latest
     steps:
-      - uses: bniladridas/cla-bot@v1.2
+      - uses: coccinella-labs/clabot@v1.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           cla-url: https://your-site.com/cla.html

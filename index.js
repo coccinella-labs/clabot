@@ -5,7 +5,7 @@ const fs = require("fs");
 async function run() {
   try {
     const token = core.getInput("github-token");
-    const claUrl = core.getInput("cla-url") || "https://harpertoken.github.io/cla.html";
+    const claUrl = core.getInput("cla-url") || "https://coccinella-labs.github.io/harpertoken.github.io/cla.html";
     const octokit = github.getOctokit(token);
     const { owner, repo } = github.context.repo;
     const pr = github.context.payload.pull_request;
